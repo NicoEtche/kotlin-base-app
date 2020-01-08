@@ -1,0 +1,2 @@
+include ':app', ':network_kotlin'
+rootProject.name='BaseKotlinApp'
