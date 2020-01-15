@@ -8,7 +8,7 @@ import com.mobile.droid.basekotlinapp.base.view.TestView
 import com.mobile.droid.network_kotlin.api.TestResponse
 import kotlinx.coroutines.launch
 
-class TestActivity :  BaseActivity<TestModel, TestView>(TestModel(), TestView()) {
+class TestActivity : BaseActivity<TestModel, TestView>(TestModel(), TestView()) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +17,10 @@ class TestActivity :  BaseActivity<TestModel, TestView>(TestModel(), TestView())
 
     override fun onStart() {
         super.onStart()
+        printMessage()
+    }
+
+    fun printMessage() {
         scope.launch {
             model.getTest(object : ResponseObserver<TestResponse> {
                 override fun onNext(t: TestResponse) {
