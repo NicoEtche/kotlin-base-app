@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "828421480655",
+    "firebase_url": "https://kotlinbase-c4ed7.firebaseio.com",
+    "project_id": "kotlinbase-c4ed7",
+    "storage_bucket": "kotlinbase-c4ed7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828421480655:android:82ef3c547ca61c1e2b57ba",
+        "android_client_info": {
+          "package_name": "com.mobile.droid.basekotlinapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828421480655-uorg8fk8d070a55kl9aok446j0jaiquo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCWxmB0lsS77um3YJCOrDb5sv6LerCeVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828421480655-uorg8fk8d070a55kl9aok446j0jaiquo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828421480655:android:7e917154dd60a1dd2b57ba",
+        "android_client_info": {
+          "package_name": "com.mobile.droid.cloud_message"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828421480655-uorg8fk8d070a55kl9aok446j0jaiquo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCWxmB0lsS77um3YJCOrDb5sv6LerCeVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828421480655-uorg8fk8d070a55kl9aok446j0jaiquo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

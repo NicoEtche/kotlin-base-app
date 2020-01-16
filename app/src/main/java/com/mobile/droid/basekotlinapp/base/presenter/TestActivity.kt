@@ -20,7 +20,7 @@ class TestActivity : BaseActivity<TestModel, TestView>(TestModel(), TestView()) 
         printMessage()
     }
 
-    fun printMessage() {
+    private fun printMessage() {
         scope.launch {
             model.getTest(object : ResponseObserver<TestResponse> {
                 override fun onNext(t: TestResponse) {
