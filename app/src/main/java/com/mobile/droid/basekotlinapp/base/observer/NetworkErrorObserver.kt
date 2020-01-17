@@ -1,9 +1,9 @@
-package com.mobile.droid.basekotlinapp.base
+package com.mobile.droid.basekotlinapp.base.observer
 
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
 
-interface ResponseObserver<T> : Observer<T> {
+interface NetworkErrorObserver<T> : Observer<T> {
 
     override fun onComplete() {
 
