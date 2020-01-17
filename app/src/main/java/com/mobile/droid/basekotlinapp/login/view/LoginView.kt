@@ -1,6 +1,5 @@
 package com.mobile.droid.basekotlinapp.login.view
 
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -42,6 +41,4 @@ class LoginView : BaseView() {
                 .subscribe(o)
         }
     }
-
-
 }

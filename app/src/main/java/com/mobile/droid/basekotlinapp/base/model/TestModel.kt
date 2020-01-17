@@ -14,7 +14,7 @@ class TestModel : BaseModel() {
 
     private val testRepository: TestRepository = TestRepository()
 
-    suspend fun getTest(o : Observer<TestResponse>) {
+    suspend fun getTest(o : Observer<TestResponse?>) {
         testRepository.getTest(object : ResultCallback<TestResponse> {
 
             override fun onSuccess(result: TestResponse?) {

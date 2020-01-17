@@ -22,9 +22,9 @@ class TestActivity : BaseActivity<TestModel, TestView>(TestModel(), TestView()) 
 
     private fun printMessage() {
         scope.launch {
-            model.getTest(object : ResponseObserver<TestResponse> {
-                override fun onNext(t: TestResponse) {
-                    view.textView.text = t.test
+            model.getTest(object : ResponseObserver<TestResponse?> {
+                override fun onNext(t: TestResponse?) {
+                    view.textView.text = t?.test
                 }
             })
         }

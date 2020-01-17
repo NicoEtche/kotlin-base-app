@@ -15,7 +15,6 @@ class LoginActivity : BaseActivity<LoginModel, LoginView>(LoginModel(), LoginVie
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
     }
 
     override fun onStart() {
@@ -28,14 +27,13 @@ class LoginActivity : BaseActivity<LoginModel, LoginView>(LoginModel(), LoginVie
 
             override fun onNext(t: String) {
                 scope.launch {
-                    model.getTest(object : ResponseObserver<TestResponse> {
-                        override fun onNext(t: TestResponse) {
-                            Toast.makeText(applicationContext, t.test, Toast.LENGTH_SHORT).show()
+                    model.getTest(object : ResponseObserver<TestResponse?> {
+                        override fun onNext(t: TestResponse?) {
+                            Toast.makeText(applicationContext, t?.test, Toast.LENGTH_SHORT).show()
                         }
                     })
                 }
             }
         })
     }
-
 }
