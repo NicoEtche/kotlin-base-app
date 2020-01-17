@@ -1,2 +1,2 @@
-include ':app', ':network_kotlin', ':cloud_messaging', ':cloud_message'
+include ':app', ':network_kotlin', ':cloud_message', ':sqlite_database'
 rootProject.name='BaseKotlinApp'
